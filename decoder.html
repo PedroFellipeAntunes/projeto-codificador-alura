@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body class="conteudo">
+    <div class="conteudo__principal">
+        <img src="assets/Vector.svg" alt="Vector.svg">
+        <div class="conteudo__principal__decodificador">
+            <textarea class="conteudo__principal__texto" placeholder="Digite seu texto" rows="4"></textarea>
+            <div class="conteudo__principal__aviso">
+                <img src="assets/bi_exclamation-circle-fill.svg" alt="bi_exclamation-circle-fill.svg">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="conteudo__principal__botoes">
+                <button onclick="ler_texto(true)" class="conteudo__principal__botoes__botao1">Criptografar</button>
+                <button onclick="ler_texto(false)" class="conteudo__principal__botoes__botao2">Descriptografar</button>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo__secundario">
+        <div class="conteudo__secundario__generico">
+            <img src="assets/High quality products 1 1.svg" alt="High quality products 1 1.svg">
+            <div class="conteudo__secundario__generico__texto">
+                <p1>Nenhuma mensagem encontrada</p1>
+                <p2>Digite um texto que você deseja criptografar ou descriptografar.</p2>
+            </div>
+        </div>
+        <div class="conteudo__secundario__oculto">
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci montes, sit et diam risus scelerisque vitae est. Tortor maecenas nunc ut laoreet. Eget diam mauris quam quisque ut eget fringilla sit elit. Libero, sodales duis fames id diam feugiat aliquet non egestas.</p>
+            </div>
+            <button onclick="copiar()" class="copiar">Copiar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
